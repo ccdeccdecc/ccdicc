@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1885E7881BDF8FDA00DE2D2C /* CCBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1885E7871BDF8FDA00DE2D2C /* CCBaseTableViewController.swift */; };
+		1885E78A1BDF90E700DE2D2C /* CCVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1885E7891BDF90E700DE2D2C /* CCVisitorView.swift */; };
 		18AC10DB1BDE0C8000520888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AC10DA1BDE0C8000520888 /* AppDelegate.swift */; };
 		18AC10E21BDE0C8000520888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AC10E11BDE0C8000520888 /* Assets.xcassets */; };
 		18AC10E51BDE0C8000520888 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AC10E31BDE0C8000520888 /* LaunchScreen.storyboard */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		1885E7871BDF8FDA00DE2D2C /* CCBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCBaseTableViewController.swift; sourceTree = "<group>"; };
+		1885E7891BDF90E700DE2D2C /* CCVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCVisitorView.swift; sourceTree = "<group>"; };
 		18AC10D71BDE0C8000520888 /* CCWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AC10DA1BDE0C8000520888 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18AC10E11BDE0C8000520888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				18C439341BDF589D001F82E7 /* CCMainTabBar.swift */,
+				1885E7891BDF90E700DE2D2C /* CCVisitorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				18C4392D1BDF10A5001F82E7 /* CCHomeTableViewController.swift in Sources */,
 				1885E7881BDF8FDA00DE2D2C /* CCBaseTableViewController.swift in Sources */,
 				18C439331BDF10F5001F82E7 /* CCProfileTableViewController.swift in Sources */,
+				1885E78A1BDF90E700DE2D2C /* CCVisitorView.swift in Sources */,
 				18AC11071BDE538300520888 /* CCTabBarViewController.swift in Sources */,
 				18AC10DB1BDE0C8000520888 /* AppDelegate.swift in Sources */,
 				18C4392F1BDF10BD001F82E7 /* CCMessageTableViewController.swift in Sources */,

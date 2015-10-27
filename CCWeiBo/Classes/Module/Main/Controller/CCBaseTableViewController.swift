@@ -11,7 +11,7 @@ import UIKit
 class CCBaseTableViewController: UITableViewController {
 
     
-    let userLogin = false
+    let userLogin = true
     override func loadView() {
         userLogin ? super.loadView() : setupVisitorView()
     }
