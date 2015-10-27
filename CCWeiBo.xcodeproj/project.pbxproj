@@ -10,6 +10,11 @@
 		18AC10DB1BDE0C8000520888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AC10DA1BDE0C8000520888 /* AppDelegate.swift */; };
 		18AC10E21BDE0C8000520888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AC10E11BDE0C8000520888 /* Assets.xcassets */; };
 		18AC10E51BDE0C8000520888 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AC10E31BDE0C8000520888 /* LaunchScreen.storyboard */; };
+		18AC11071BDE538300520888 /* CCTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AC11061BDE538300520888 /* CCTabBarViewController.swift */; };
+		18C4392D1BDF10A5001F82E7 /* CCHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C4392C1BDF10A5001F82E7 /* CCHomeTableViewController.swift */; };
+		18C4392F1BDF10BD001F82E7 /* CCMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C4392E1BDF10BD001F82E7 /* CCMessageTableViewController.swift */; };
+		18C439311BDF10D4001F82E7 /* CCDiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C439301BDF10D4001F82E7 /* CCDiscoverTableViewController.swift */; };
+		18C439331BDF10F5001F82E7 /* CCProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C439321BDF10F5001F82E7 /* CCProfileTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +23,11 @@
 		18AC10E11BDE0C8000520888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18AC10E41BDE0C8000520888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18AC10E61BDE0C8000520888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18AC11061BDE538300520888 /* CCTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCTabBarViewController.swift; sourceTree = "<group>"; };
+		18C4392C1BDF10A5001F82E7 /* CCHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCHomeTableViewController.swift; sourceTree = "<group>"; };
+		18C4392E1BDF10BD001F82E7 /* CCMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCMessageTableViewController.swift; sourceTree = "<group>"; };
+		18C439301BDF10D4001F82E7 /* CCDiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCDiscoverTableViewController.swift; sourceTree = "<group>"; };
+		18C439321BDF10F5001F82E7 /* CCProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCProfileTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,11 +61,232 @@
 			isa = PBXGroup;
 			children = (
 				18AC10DA1BDE0C8000520888 /* AppDelegate.swift */,
+				18AC10EC1BDE51FF00520888 /* Classes */,
 				18AC10E11BDE0C8000520888 /* Assets.xcassets */,
 				18AC10E31BDE0C8000520888 /* LaunchScreen.storyboard */,
 				18AC10E61BDE0C8000520888 /* Info.plist */,
 			);
 			path = CCWeiBo;
+			sourceTree = "<group>";
+		};
+		18AC10EC1BDE51FF00520888 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				18AC10ED1BDE51FF00520888 /* Extension(扩展) */,
+				18AC10EE1BDE51FF00520888 /* Library(第三方库) */,
+				18AC10EF1BDE51FF00520888 /* Model(全局模块) */,
+				18AC10F01BDE51FF00520888 /* Module(模块) */,
+				18AC10F11BDE51FF00520888 /* Tool(工具) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		18AC10ED1BDE51FF00520888 /* Extension(扩展) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Extension(扩展)";
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		18AC10EE1BDE51FF00520888 /* Library(第三方库) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Library(第三方库)";
+			path = Library;
+			sourceTree = "<group>";
+		};
+		18AC10EF1BDE51FF00520888 /* Model(全局模块) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Model(全局模块)";
+			path = model;
+			sourceTree = "<group>";
+		};
+		18AC10F01BDE51FF00520888 /* Module(模块) */ = {
+			isa = PBXGroup;
+			children = (
+				18AC10FA1BDE52CD00520888 /* Main */,
+				18AC10F61BDE52CD00520888 /* Home */,
+				18AC10FE1BDE52CD00520888 /* Message(消息) */,
+				18AC10F21BDE52CD00520888 /* Discover(发现) */,
+				18AC11021BDE52CD00520888 /* Profile(我) */,
+			);
+			name = "Module(模块)";
+			path = Module;
+			sourceTree = "<group>";
+		};
+		18AC10F11BDE51FF00520888 /* Tool(工具) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Tool(工具)";
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		18AC10F21BDE52CD00520888 /* Discover(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				18AC10F31BDE52CD00520888 /* Controller */,
+				18AC10F41BDE52CD00520888 /* Model */,
+				18AC10F51BDE52CD00520888 /* View */,
+			);
+			name = "Discover(发现)";
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		18AC10F31BDE52CD00520888 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18C439301BDF10D4001F82E7 /* CCDiscoverTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18AC10F41BDE52CD00520888 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18AC10F51BDE52CD00520888 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18AC10F61BDE52CD00520888 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				18AC10F71BDE52CD00520888 /* Controller */,
+				18AC10F81BDE52CD00520888 /* Model */,
+				18AC10F91BDE52CD00520888 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		18AC10F71BDE52CD00520888 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18C4392C1BDF10A5001F82E7 /* CCHomeTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18AC10F81BDE52CD00520888 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18AC10F91BDE52CD00520888 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18AC10FA1BDE52CD00520888 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				18AC10FB1BDE52CD00520888 /* Controller */,
+				18AC10FC1BDE52CD00520888 /* Model */,
+				18AC10FD1BDE52CD00520888 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		18AC10FB1BDE52CD00520888 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18AC11061BDE538300520888 /* CCTabBarViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18AC10FC1BDE52CD00520888 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18AC10FD1BDE52CD00520888 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18AC10FE1BDE52CD00520888 /* Message(消息) */ = {
+			isa = PBXGroup;
+			children = (
+				18AC10FF1BDE52CD00520888 /* Controller */,
+				18AC11001BDE52CD00520888 /* Model */,
+				18AC11011BDE52CD00520888 /* View */,
+			);
+			name = "Message(消息)";
+			path = Message;
+			sourceTree = "<group>";
+		};
+		18AC10FF1BDE52CD00520888 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18C4392E1BDF10BD001F82E7 /* CCMessageTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18AC11001BDE52CD00520888 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18AC11011BDE52CD00520888 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18AC11021BDE52CD00520888 /* Profile(我) */ = {
+			isa = PBXGroup;
+			children = (
+				18AC11031BDE52CD00520888 /* Controller */,
+				18AC11041BDE52CD00520888 /* Model */,
+				18AC11051BDE52CD00520888 /* View */,
+			);
+			name = "Profile(我)";
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		18AC11031BDE52CD00520888 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18C439321BDF10F5001F82E7 /* CCProfileTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18AC11041BDE52CD00520888 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18AC11051BDE52CD00520888 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +360,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C4392D1BDF10A5001F82E7 /* CCHomeTableViewController.swift in Sources */,
+				18C439331BDF10F5001F82E7 /* CCProfileTableViewController.swift in Sources */,
+				18AC11071BDE538300520888 /* CCTabBarViewController.swift in Sources */,
 				18AC10DB1BDE0C8000520888 /* AppDelegate.swift in Sources */,
+				18C4392F1BDF10BD001F82E7 /* CCMessageTableViewController.swift in Sources */,
+				18C439311BDF10D4001F82E7 /* CCDiscoverTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
