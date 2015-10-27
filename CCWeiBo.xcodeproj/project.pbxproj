@@ -15,6 +15,7 @@
 		18C4392F1BDF10BD001F82E7 /* CCMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C4392E1BDF10BD001F82E7 /* CCMessageTableViewController.swift */; };
 		18C439311BDF10D4001F82E7 /* CCDiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C439301BDF10D4001F82E7 /* CCDiscoverTableViewController.swift */; };
 		18C439331BDF10F5001F82E7 /* CCProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C439321BDF10F5001F82E7 /* CCProfileTableViewController.swift */; };
+		18C439351BDF589D001F82E7 /* CCMainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C439341BDF589D001F82E7 /* CCMainTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		18C4392E1BDF10BD001F82E7 /* CCMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCMessageTableViewController.swift; sourceTree = "<group>"; };
 		18C439301BDF10D4001F82E7 /* CCDiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCDiscoverTableViewController.swift; sourceTree = "<group>"; };
 		18C439321BDF10F5001F82E7 /* CCProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCProfileTableViewController.swift; sourceTree = "<group>"; };
+		18C439341BDF589D001F82E7 /* CCMainTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCMainTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 		18AC10FD1BDE52CD00520888 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18C439341BDF589D001F82E7 /* CCMainTabBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C439351BDF589D001F82E7 /* CCMainTabBar.swift in Sources */,
 				18C4392D1BDF10A5001F82E7 /* CCHomeTableViewController.swift in Sources */,
 				18C439331BDF10F5001F82E7 /* CCProfileTableViewController.swift in Sources */,
 				18AC11071BDE538300520888 /* CCTabBarViewController.swift in Sources */,
